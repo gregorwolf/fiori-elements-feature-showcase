@@ -170,11 +170,13 @@ annotate service.RootEntities with @(
                 Label : '{i18n>resetEntities}',
             },
             {
-                $Type            : 'UI.DataFieldWithUrl',
-                Url              : fieldWithURL, //Target, when pressing the text
-                Value            : fieldWithURLtext, //Visible text
-                Label            : '{i18n>dataFieldWithURL}',
-                ![@UI.Importance]: #Medium,
+                $Type                    : 'UI.DataFieldWithUrl',
+                Url                      : fieldWithURL, //Target, when pressing the text
+                Value                    : fieldWithURLtext, //Visible text
+                Label                    : '{i18n>dataFieldWithURL}',
+                ![@UI.Importance]        : #Medium,
+                Criticality              : criticality_code, //Supported values 0,1,2,3,5
+                CriticalityRepresentation: #WithIcon,
             },
         ],
         //Search-Term: #LineItemHighlight
