@@ -202,6 +202,22 @@
                                                 "placement": "After",
                                                 "anchor": "DataField::fieldWithCriticality"
                                             }
+                                        },
+                                        "CustomColumnLink": {
+                                            "key": "customColumnLink",
+                                            "header": "{i18n>LinkInNewTab}",
+                                            "template": "sap.fe.featureShowcase.mainApp.ext.CustomColumn-LinkInNewTab",
+                                            "availability": "Default",
+                                            "horizontalAlign": "Left",
+                                            "width": "auto",
+                                            "properties": [
+                                                "fieldWithURL",
+                                                "fieldWithURLtext"
+                                            ],
+                                            "position": {
+                                                "placement": "After",
+                                                "anchor": "DataField::fieldWithURLtext"
+                                            }
                                         }
                                     }
                                 },
