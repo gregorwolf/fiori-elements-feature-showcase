@@ -37,6 +37,7 @@ annotate service1.RootEntities {
     region_country_code                 @UI.HiddenFilter; //Filter not available in the list report
     deletePossible                      @UI.Hidden;
     updateHidden                        @UI.Hidden;
+    @HTML5.LinkTarget : '_blank' // Should open the link in a new tab
     fieldWithURL                        @UI.Hidden;
 
     email @mandatory;
