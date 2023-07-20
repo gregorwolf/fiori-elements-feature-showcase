@@ -1,5 +1,5 @@
 <!-- #CustomColumn -->
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
         <Link href="{fieldWithURL}" text="{fieldWithURLtext} {criticality_code}" target="_blank"
-                visible="{= ${criticality_code} === 0 ? false : true }"></Link>
+                visible="{= %{criticality_code} !== 0}" />
 </core:FragmentDefinition>
