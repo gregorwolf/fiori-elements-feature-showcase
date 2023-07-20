@@ -211,6 +211,7 @@
                                             "horizontalAlign": "Left",
                                             "width": "auto",
                                             "properties": [
+                                                "criticality_code",
                                                 "fieldWithURL",
                                                 "fieldWithURLtext"
                                             ],
