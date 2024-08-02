@@ -9,6 +9,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.13.1",
     "@sap/cds": "^7.2",
     "cds-launchpad-plugin": "^2.0.1",
     "content-disposition": "^0.5.3",
@@ -47,6 +48,7 @@
     }
   },
   "sapux": [
+    "app/mainappv2",
     "app/featureShowcase",
     "app/featureShowcaseNavigationTarget"
   ]
