@@ -5,6 +5,11 @@ using service1 as service from '../../srv/service';
     Search-Term: #Contact
  */
 annotate service1.Contacts with @(
+    UI.SelectionFields   : [
+        name,
+        city,
+        country_code
+    ],
     Communication.Contact : {
         fn   : name, //full name
         kind : #org,
