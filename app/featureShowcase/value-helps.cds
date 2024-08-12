@@ -28,7 +28,7 @@ annotate schema.RootEntities with{
         Text            : contact.name,
         TextArrangement : #TextOnly,
         ValueList       : {
-            Label          : '{i18n>customer}', //Title of the value help dialog
+            Label          : '{i18n>contact}', //Title of the value help dialog
             CollectionPath : 'Contacts', //Entities of the value help. Refers to an entity name from the CAP service
             Parameters     : [
                 {
@@ -45,6 +45,22 @@ annotate schema.RootEntities with{
                     ValueListProperty   : 'city',
                 }
                 
+            ]
+        },
+        ValueList#NoCity      : {
+            Label         : '{i18n>contactWithoutCity}', //Title of the value help dialog
+            CollectionPath: 'Contacts', //Entities of the value help. Refers to an entity name from the CAP service
+            Parameters    : [
+                {
+                    $Type            : 'Common.ValueListParameterInOut',
+                    ValueListProperty: 'ID', //Binding between ID and contact_ID, that everything works
+                    LocalDataProperty: contact_ID
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly', //Displays additional information from the entity set of the value help
+                    ValueListProperty: 'country_code',
+                }
+
             ]
         }
     });
