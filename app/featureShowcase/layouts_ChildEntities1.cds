@@ -1,6 +1,16 @@
 using service1 as service from '../../srv/service';
 using service1.GrandChildEntities as grandChildren from './layouts_GrandChildEntities';
 
+annotate service.ChildEntities1 with @(
+    UI.Identification : [
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'service1.calculatePercentage',
+            Label : '{i18n>calculatePercentage}'
+        },
+    ],
+);
+
 /**
     UI.LineItem
  */

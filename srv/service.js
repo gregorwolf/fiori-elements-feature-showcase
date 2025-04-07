@@ -90,6 +90,15 @@ module.exports = async (srv) => {
         return UPDATE(RootEntities,headerID).with({criticality_code : criticality_code, fieldWithCriticality : determineFieldWithCriticalityValue(criticality_code)});
     });
 
+    srv.on("calculatePercentage",ChildEntities1, async (req) => {
+        //Req.data contains the parameter values of the action
+        //Req.params contains IDs and Draft IDs of the entity
+        const headerID = req.params[1].ID;
+        //Update the current RootEntity with the new value for ciritcality_code and fieldWithCriticality  
+        await UPDATE(ChildEntities1,headerID).with({fieldWithPerCent : 30});
+        return SELECT.one.from(ChildEntities1).where({ID: headerID})
+    });
+
     function determineFieldWithCriticalityValue(criticality_code) {
         let fieldWithCriticality = '';
         switch(criticality_code) {

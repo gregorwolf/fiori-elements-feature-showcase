@@ -66,7 +66,10 @@ service service1 @(path : '/srv1') {
     action criticalAction();
 
 
-    entity ChildEntities1       as projection on persistence.ChildEntities1;
+    entity ChildEntities1       as projection on persistence.ChildEntities1 actions {
+        @Core.OperationAvailable : {$edmJson: {$Path: 'in/parent/deletePossible'}}
+        action calculatePercentage() returns ChildEntities1;
+    };
     entity ChildEntities2       as projection on persistence.ChildEntities2;
     entity ChildEntities3       as projection on persistence.ChildEntities3;
 
