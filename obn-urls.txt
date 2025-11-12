@@ -1,0 +1,11 @@
+Association:
+
+http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?association2one_ID=b6451584-d37c-4bb4-b35a-d2327810a143&integerProperty=20&sap-xapp-state=TASOL7G3FC9G2Y7BOKIC2H7AG18WVXI55GTGIQZ15&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
+
+Shoppingbasket:
+
+http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?association2one_ID=b6451584-d37c-4bb4-b35a-d2327810a143&integerProperty=20&sap-xapp-state=TASJM7EEXYGO6MDPBYDH2R0B0SNEX0YHS1X4KWWZA&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
+
+IBN on Object Page:
+
+http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?HasActiveEntity=false&HasDraftEntity=false&ID=b6451584-d37c-4bb4-b35a-d2327810a143&criticality_code=0&deletePossible=false&integerProperty=20&sap-xapp-state=TASYFBBIX0IKCC22WHXAKMU278C9RM8EH9UCDUUXN&updateHidden=false&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
