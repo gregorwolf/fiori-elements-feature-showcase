@@ -28,8 +28,19 @@
             "inbounds": {
                 "feature-showcase-worklist": {
                     "signature": {
-                        "parameters": {},
-                        "additionalParameters": "allowed"
+                        "parameters": {
+                            "ID": {
+                                "required": false
+                            },
+                            "association2one_ID": {
+                                "renameTo": "ID",
+                                "required": false
+                            },
+                            "integerProperty": {
+                                "required": false
+                            }
+                        },
+                        "additionalParameters": "ignored"
                     },
                     "semanticObject": "FeatureShowcaseChildEntity2",
                     "action": "manage",
