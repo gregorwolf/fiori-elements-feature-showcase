@@ -148,6 +148,11 @@ annotate srv.RootEntities with @(
                     LocalProperty           : integerValue, //it is a dummy mapping without sense
                     SemanticObjectProperty  : 'integerProperty',
                 },
+                {
+                    $Type                   : 'Common.SemanticObjectMappingType',
+                    LocalProperty           : association2one.ID,
+                    SemanticObjectProperty  : 'ID',
+                },
             ],
             @UI.Importance   : #High,
         },
@@ -238,6 +243,11 @@ annotate srv.RootEntities with @(
                         $Type                   : 'Common.SemanticObjectMappingType',
                         LocalProperty           : integerValue,
                         SemanticObjectProperty  : 'integerProperty',
+                    },
+                    {
+                        $Type                   : 'Common.SemanticObjectMappingType',
+                        LocalProperty           : association2one_ID,
+                        SemanticObjectProperty  : 'ID',
                     },
                 ],
                 @UI.Importance : #High,
