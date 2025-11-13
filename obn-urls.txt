@@ -1,11 +1,11 @@
 Association:
 
-http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?association2one_ID=b6451584-d37c-4bb4-b35a-d2327810a143&integerProperty=20&sap-xapp-state=TASOL7G3FC9G2Y7BOKIC2H7AG18WVXI55GTGIQZ15&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
+http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?ID=b6451584-d37c-4bb4-b35a-d2327810a143&sap-xapp-state=TASKVZFGAO8X5QPH7DB2U12JG1ES8Z6TCZ37O48LJ&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
 
 Shoppingbasket:
 
-http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?association2one_ID=b6451584-d37c-4bb4-b35a-d2327810a143&integerProperty=20&sap-xapp-state=TASJM7EEXYGO6MDPBYDH2R0B0SNEX0YHS1X4KWWZA&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
+http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?ID=b6451584-d37c-4bb4-b35a-d2327810a143&integerProperty=20&sap-xapp-state=TASWQDSZ0HJ26XLO30R4Z1HJJ5F8EA4KN2LY3JHFY&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
 
 IBN on Object Page:
 
-http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?HasActiveEntity=false&HasDraftEntity=false&ID=b6451584-d37c-4bb4-b35a-d2327810a143&criticality_code=0&deletePossible=false&integerProperty=20&sap-xapp-state=TASYFBBIX0IKCC22WHXAKMU278C9RM8EH9UCDUUXN&updateHidden=false&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
+http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?HasActiveEntity=false&HasDraftEntity=false&ID=b6451584-d37c-4bb4-b35a-d2327810a143&criticality_code=0&deletePossible=false&integerProperty=20&sap-xapp-state=TAS6FMJWLREE8Z74CCK97AQEN3UO0T546NY81C6QW&updateHidden=false&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)
