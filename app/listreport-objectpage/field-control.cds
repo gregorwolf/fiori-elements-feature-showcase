@@ -21,6 +21,11 @@ annotate srv.RootEntities {
                 LocalProperty : integerValue,
                 SemanticObjectProperty : 'integerProperty',
             },
+            {
+                $Type                   : 'Common.SemanticObjectMappingType',
+                LocalProperty           : association2one_ID,
+                SemanticObjectProperty  : 'ID',
+            },
         ], 
     );
     

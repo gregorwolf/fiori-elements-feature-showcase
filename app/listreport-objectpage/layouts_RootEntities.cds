@@ -150,7 +150,7 @@ annotate srv.RootEntities with @(
                 },
                 {
                     $Type                   : 'Common.SemanticObjectMappingType',
-                    LocalProperty           : association2one.ID,
+                    LocalProperty           : association2one_ID,
                     SemanticObjectProperty  : 'ID',
                 },
             ],
