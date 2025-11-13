@@ -31,13 +31,6 @@
                         "parameters": {
                             "ID": {
                                 "required": false
-                            },
-                            "association2one_ID": {
-                                "renameTo": "ID",
-                                "required": false
-                            },
-                            "integerProperty": {
-                                "required": false
                             }
                         },
                         "additionalParameters": "ignored"
