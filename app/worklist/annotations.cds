@@ -40,3 +40,35 @@ annotate srv.ChildEntities2 with @(
         },
     },
 );
+
+// UI.FieldGroup
+annotate srv.ChildEntities2 with @(
+    UI.FieldGroup #data : {
+        Data    : [
+            {Value : stringProperty, @Common.FieldControl : #ReadOnly},
+            {Value : integerProperty, @Common.FieldControl : #ReadOnly},
+            {Value : decimalProperty, @Common.FieldControl : #ReadOnly},
+            {Value : country_code, @Common.FieldControl : #ReadOnly}
+        ],
+    },
+) {
+    country @Common.Text : country.name @Common.TextArrangement #TextFirst;
+};
+
+annotate srv.ChildEntities2 with @(
+    UI.Facets : [
+        {
+            $Type   : 'UI.CollectionFacet',
+            ID      : 'collectionFacetSection',
+            Label   : '{i18n>collectionSection}',
+            Facets  : [
+                {
+                    $Type   : 'UI.ReferenceFacet',
+                    Target  : '@UI.FieldGroup#data',
+                    ID      : 'SubSectionID',
+                    Label   : '{i18n>subSection}',
+                },
+            ],
+        },
+    ],
+);
