@@ -157,6 +157,18 @@ annotate srv.RootEntities with @(
             @UI.Importance   : #High,
         },
         {
+            $Type: 'UI.DataFieldWithIntentBasedNavigation',
+            Value: association2one2_ID,
+            SemanticObject: 'FeatureShowcaseChildEntity2',
+            Action: 'manage',
+            Mapping: [{
+                $Type: 'Common.SemanticObjectMappingType',
+                LocalProperty: association2one2_ID,
+                SemanticObjectProperty: 'ID'
+            }],
+            @UI.Importance   : #High,
+        },
+        {
             $Type               : 'UI.DataFieldForAction',
             Action              : 'LROPODataService.EntityContainer/unboundAction', //Unbound actions need to be referenced through the entity container (Action import)
             Label               : '{i18n>unboundAction}',
