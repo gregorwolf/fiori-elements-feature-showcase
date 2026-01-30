@@ -62,6 +62,8 @@ entity RootEntities : cuid, managed, rootBasis {
                                     on childEntities1.parent = $self;
     association2one                : Association to one ChildEntities2;
     association2one2               : Association to one ChildEntities2;
+    association2root1               : Association to one RootEntities;
+    association2root2               : Association to one RootEntities;
     childEntities3              : Composition of many ChildEntities3
                                     on childEntities3.parent = $self;
     chartEntities               : Composition of many ChartDataEntities

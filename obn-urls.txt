@@ -1,3 +1,6 @@
+
+http://localhost:4004/$launchpad#FeatureShowcase-manage?ID=c5d24ecb-8b18-459f-be21-4e7d5727fb56&association2one2_ID=05a1bb65-7a6b-459d-9b8e-8c431b75fc97&association2one_ID=b6451584-d37c-4bb4-b35a-d2327810a143&integerValue=20&sap-xapp-state=TASB349W6P1GKJ0Z6EEKDWZ66ZYYWNS6GG76YAS3E&stringProperty=Root%2520entity%25201%2520and%2520delete%2520not%2520possible&/RootEntities('Root%2520entity%25201%2520and%2520delete%2520not%2520possible')
+
 Association:
 
 http://localhost:4004/$launchpad#FeatureShowcaseChildEntity2-manage?ID=b6451584-d37c-4bb4-b35a-d2327810a143&sap-xapp-state=TASKVZFGAO8X5QPH7DB2U12JG1ES8Z6TCZ37O48LJ&/ChildEntities2(b6451584-d37c-4bb4-b35a-d2327810a143)

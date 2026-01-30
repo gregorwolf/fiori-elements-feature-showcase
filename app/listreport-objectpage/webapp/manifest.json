@@ -29,8 +29,12 @@
             "inbounds": {
                 "feature-showcase": {
                     "signature": {
-                        "parameters": {},
-                        "additionalParameters": "allowed"
+                        "parameters": {
+                            "ID": {
+                                "required": false
+                            }
+                        },
+                        "additionalParameters": "ignored"
                     },
                     "semanticObject": "FeatureShowcase",
                     "action": "manage",
