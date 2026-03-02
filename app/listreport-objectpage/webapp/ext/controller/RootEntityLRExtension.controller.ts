@@ -4,11 +4,38 @@ import MessageBox from "sap/m/MessageBox";
 import ControllerExtension from "sap/ui/core/mvc/ControllerExtension";
 import Context from "sap/ui/model/odata/v4/Context";
 import ODataContextBinding from "sap/ui/model/odata/v4/ODataContextBinding";
+import FilterBarAPI from "sap/fe/macros/filterBar/FilterBarAPI";
 
 /**
  * @namespace sap.fe.showcase.lrop.ext.controller
  */
 export default class RootEntityLRExtension extends ControllerExtension<ExtensionAPI> {
+  static overrides = {
+    onInit(this: RootEntityLRExtension) {
+      console.log("onInit called in RootEntityLRExtension");
+    },
+    onBeforeRendering(this: RootEntityLRExtension) {
+      console.log("onBeforeRendering called in RootEntityLRExtension");
+    },
+    onAfterRendering(this: RootEntityLRExtension) {
+      console.log("onAfterRendering called in RootEntityLRExtension");
+      // you can access the Fiori elements extensionAPI via this.base.getExtensionAPI
+      const extAPI = this.base.getExtensionAPI() as ExtensionAPI;
+      // Handle the promise without using void operator
+      extAPI
+        // Error:
+        //.setFilterValues("validFrom", "DATERANGE", ["2021-01-02", "2021-01-04"])
+        // Works:
+        .setFilterValues("validFrom", "TO", "2021-01-02")
+        //.setFilterValues("validFrom", "EQ", "2021-01-02")
+        //.setFilterValues("validFrom", "NEXTMONTHS", 3)
+        .catch((error: Error) => {
+          // Handle potential errors when setting filter values
+          console.error("Failed to set filter values:", error);
+        });
+    },
+  };
+
   messageBox() {
     MessageBox.alert("Button pressed");
   }
